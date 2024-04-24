@@ -1,0 +1,70 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    background-image: url('img/background.png'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem no meio da tela */
+}
+
+.container {
+    padding: 40px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto; /* Centraliza a logo horizontalmente */
+    max-width: 200px; /* Define a largura máxima da logo */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    animation: rainbowText 20s infinite; /* Reduzindo a velocidade do efeito de arco-íris */
+}
+
+@keyframes rainbowText {
+    0% { color: #ff0000; }
+    20% { color: #ff8000; }
+    40% { color: #ffff00; }
+    60% { color: #00ff00; }
+    80% { color: #0000ff; }
+    100% { color: #ff00ff; }
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: rainbowText 10s infinite; /* Aplicando o efeito de arco-íris */
+}
+
+.description p {
+    font-size: 24px;
+    animation: rainbowText 10s infinite; /* Aplicando o efeito de arco-íris */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    margin: 0 15px; /* Reduzindo a margem entre os ícones */
+}
+
+.social-media a i {
+    font-size: 40px; /* Reduzindo o tamanho dos ícones */
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    animation: rainbowText 10s infinite; /* Aplicando o efeito de arco-íris */
+}
+
+.social-media a:hover i {
+    color: #000;
+    transform: scale(1.2);
+}
